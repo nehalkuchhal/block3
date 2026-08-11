@@ -23,7 +23,10 @@ export default function Header() {
 
   return (
     <header>
-      <Link className="wordmark" href="/">Pentagram</Link>
+      <Link className="wordmark" href="/" aria-label="Block 3 — home">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/block3-logo.jpg" alt="Block 3" className="brand-logo" />
+      </Link>
 
       <nav className="main" aria-label="Primary">
         {NAV.map((n) => (

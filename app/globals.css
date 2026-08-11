@@ -38,8 +38,9 @@ header {
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 22px; background: var(--ground); border-bottom: 1px solid var(--line);
 }
-.wordmark { font-family: Georgia, "Times New Roman", Times, serif; font-weight: 500;
-  font-size: 25px; letter-spacing: 0.01em; line-height: 1; }
+.wordmark { display: inline-flex; align-items: center; line-height: 0; }
+.brand-logo { height: 26px; width: auto; display: block; }
+@media (prefers-color-scheme: dark) { .brand-logo { filter: invert(1); } }
 nav.main { display: flex; align-items: center; gap: 24px; }
 nav.main > a { font-size: 16px; color: var(--ink); }
 nav.main > a:hover, nav.main > a.active { color: #000; text-decoration: underline; text-underline-offset: 4px; }
@@ -225,7 +226,8 @@ nav.main > a:hover, nav.main > a.active { color: #000; text-decoration: underlin
 /* ---------- Footer ---------- */
 footer { border-top: 1px solid var(--line); padding: 44px 22px 60px; max-width: 1500px; margin: 0 auto;
   display: flex; flex-wrap: wrap; gap: 28px 60px; align-items: flex-start; }
-footer .fbrand { font-family: Georgia, "Times New Roman", Times, serif; font-size: 24px; font-weight: 500; }
+footer .fbrand { line-height: 0; }
+footer .fbrand .brand-logo { height: 30px; }
 footer .fcol { display: flex; gap: 22px; flex-wrap: wrap; }
 footer .fcol a { font-size: 15px; color: var(--ink-soft); }
 footer .fcol a:hover { color: var(--ink); }

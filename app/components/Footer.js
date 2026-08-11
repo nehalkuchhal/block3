@@ -3,7 +3,10 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer>
-      <div className="fbrand">Pentagram</div>
+      <div className="fbrand">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/block3-logo.jpg" alt="Block 3" className="brand-logo" />
+      </div>
       <div className="fcol">
         <Link href="/">Work</Link>
         <Link href="/about">About</Link>
