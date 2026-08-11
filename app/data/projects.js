@@ -2,6 +2,12 @@ export const PROJECTS = [
   { id: "toysun", title: "Toy Sun", disc: "Brand Identity", heroWord: "streetwear",
     tags: ["Identity", "Packaging"], art: "toy",
     desc: "A homegrown streetwear identity for the Indian rebels, wanderers and misfits who refuse to disappear.",
+    images: [
+      "/toysun/s01.jpg", "/toysun/s02.jpg", "/toysun/s03.jpg", "/toysun/s04.jpg", "/toysun/s05.jpg",
+      "/toysun/s06.jpg", "/toysun/s07.jpg", "/toysun/s08.jpg", "/toysun/s09.jpg", "/toysun/s10.jpg",
+      "/toysun/s11.jpg", "/toysun/s12.jpg", "/toysun/s13.jpg", "/toysun/s14.jpg", "/toysun/s15.jpg",
+      "/toysun/s16.jpg", "/toysun/s17.jpg", "/toysun/s18.jpg",
+    ],
     figs: ["a10", "a4"],
     lede: "Too different to blend in.",
     p1: "Inspired by East Asian street dressing and the glow of neon-lit city nights, Toy Sun is an Indian-born apparel and accessories collective. Rooted in street culture and Korean-style layering, it brings the spirit of neon streets to the corners of Indian cities — from loose tees and worn denim to skateboards, caps and lighters.",

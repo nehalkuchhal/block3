@@ -82,7 +82,16 @@ export default function ProjectDetail({ project, related }) {
 
       {/* body: media (+ about panel when open) */}
       <div className={`case-layout ${open ? "open" : ""}`}>
-        <div className="case-media">{blocks.map(renderBlock)}</div>
+        {project.images?.length ? (
+          <div className="case-media raw">
+            {project.images.map((src, i) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={src} src={src} alt={`${project.title} — ${i + 1}`} loading={i < 2 ? "eager" : "lazy"} />
+            ))}
+          </div>
+        ) : (
+          <div className="case-media">{blocks.map(renderBlock)}</div>
+        )}
 
         {open && (
           <aside className="about-panel">
