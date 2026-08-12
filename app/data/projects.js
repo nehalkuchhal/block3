@@ -18,7 +18,7 @@ export const PROJECTS = [
     thumb: "/andaman/p01.jpg",
     desc: "A travel magazine that reframes the Andaman Islands — not a guidebook, but a keepsake of memory made to bring travellers back.",
     images: [
-      "/andaman/cover.jpg", "/andaman/anim.gif", "/andaman/p01.jpg", "/andaman/p02.jpg", "/andaman/p03.jpg",
+      "/andaman/cover.jpg", "/andaman/anim.gif", "/andaman/p01.jpg", "/andaman/p03.jpg",
       "/andaman/p04.jpg", "/andaman/p05.jpg", "/andaman/p06.jpg", "/andaman/p07.jpg", "/andaman/p08.jpg",
       "/andaman/p09.jpg", "/andaman/p10.jpg", "/andaman/p11.jpg", "/andaman/p12.jpg", "/andaman/p13.jpg",
       "/andaman/p14.jpg", "/andaman/p15.jpg", "/andaman/p16.jpg", "/andaman/p17.jpg", "/andaman/back.jpg",
