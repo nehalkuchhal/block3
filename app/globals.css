@@ -160,6 +160,8 @@ nav.main > a:hover, nav.main > a.active { color: #000; text-decoration: underlin
 .case-media { display: flex; flex-direction: column; gap: 6px; }
 .case-media.raw { gap: 0; }
 .case-media.raw img { width: 100%; display: block; }
+/* real cover images used as tile thumbnails */
+.art-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .m-full { width: 100%; aspect-ratio: 16/9; position: relative; container-type: inline-size; overflow: hidden; }
 .m-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .m-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }

@@ -3,15 +3,16 @@
 import { useState } from "react";
 import Link from "next/link";
 import Art from "./Art";
+import Thumb from "./Thumb";
 
 const SECTOR = {
-  toysun: "Fashion & Beauty", meridian: "Finance", verso: "Arts & Culture", solstice: "Arts & Culture",
+  andaman: "Travel & Hospitality", toysun: "Fashion & Beauty", meridian: "Finance", verso: "Arts & Culture", solstice: "Arts & Culture",
   review: "Media", atlas: "Technology", kinfolk: "Food & Drink",
   northbound: "Transport", serif: "Arts & Culture", bloom: "Retail",
   harbor: "Industry", field: "Media", cassette: "Technology",
 };
 const OFFICE = {
-  toysun: "New Delhi", meridian: "London", verso: "New York", solstice: "Berlin", review: "New York",
+  andaman: "New Delhi", toysun: "New Delhi", meridian: "London", verso: "New York", solstice: "Berlin", review: "New York",
   atlas: "Austin", kinfolk: "London", northbound: "Berlin", serif: "London",
   bloom: "New York", harbor: "London", field: "Austin", cassette: "New York",
 };
@@ -32,7 +33,7 @@ export default function ProjectDetail({ project, related }) {
 
   const partner = (project.credits.find((c) => c[0] === "Partner") || [])[1] || "—";
 
-  const [f0, f1] = project.figs;
+  const [f0, f1] = project.figs || [];
   const blocks = [
     { type: "full", a: project.art },
     { type: "duo", a: f0, b: f1 },
@@ -135,7 +136,7 @@ export default function ProjectDetail({ project, related }) {
         <div className="more-grid">
           {related.map((p) => (
             <Link key={p.id} href={`/work/${p.id}`} className="mcard">
-              <div className="mthumb"><Art kind={p.art} /></div>
+              <div className="mthumb"><Thumb project={p} /></div>
               <div className="mtitle">{p.title}</div>
               <div className="mdesc">{p.desc}</div>
             </Link>

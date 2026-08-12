@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { PROJECTS } from "@/app/data/projects";
-import Art from "./Art";
+import Thumb from "./Thumb";
 
 const SLIDES = PROJECTS.slice(0, 8);
 const INTERVAL = 3400;
@@ -38,7 +38,7 @@ export default function Hero() {
       >
         {SLIDES.map((p, idx) => (
           <div key={p.id} className={"layer" + (idx === i ? " on" : "")} aria-hidden={idx !== i}>
-            <Art kind={p.art} />
+            <Thumb project={p} />
           </div>
         ))}
 
