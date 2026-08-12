@@ -10,10 +10,9 @@ export default function FeatureSection() {
   return (
     <section className="feature">
       <div className="feature-inner">
-        <h2 className="feature-title">Our Future is the Ultimate Project</h2>
+        <h2 className="feature-title">Our Ideas Are Meant to Exist</h2>
 
         <div className="manifesto">
-          <h3 className="manifesto-title">Our Ideas Are Meant to Exist</h3>
           <p>
             We believe the best ideas are the ones that refuse to stay ideas. The ones that start as a
             thought, a scribble, a conversation at an unreasonable hour.
