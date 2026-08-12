@@ -87,7 +87,7 @@ export default function ProjectDetail({ project, related }) {
           <div className="case-media raw">
             {project.images.map((src, i) => (
               // eslint-disable-next-line @next/next/no-img-element
-              <img key={src} src={src} alt={`${project.title} — ${i + 1}`} loading={i < 2 ? "eager" : "lazy"} />
+              <img key={src} src={src} alt={`${project.title} — ${i + 1}`} loading={i < 1 ? "eager" : "lazy"} />
             ))}
           </div>
         ) : (
