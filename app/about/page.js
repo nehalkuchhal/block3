@@ -1,6 +1,6 @@
 export const metadata = { title: "About — Block 3" };
 
-const SUBHEADING = "Or maestros of imagination. Or rulers of creative kingdoms.";
+const SUBHEADING = "Or maestros of imagination.<br/>Or rulers of creative kingdoms.";
 
 const BODY = [
   "We’re thinkers.",
