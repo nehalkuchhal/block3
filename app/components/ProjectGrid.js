@@ -40,7 +40,7 @@ export default function ProjectGrid() {
       </div>
 
       <div className="masonry" ref={ref}>
-        {PROJECTS.map((p, idx) => (
+        {PROJECTS.slice(0, 5).map((p, idx) => (
           <Link key={p.id} href={`/work/${p.id}`} className={`card ${SIZE[idx % SIZE.length]}`}>
             <div className="thumb">
               <Art kind={p.art} />
