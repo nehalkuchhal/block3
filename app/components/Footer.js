@@ -10,17 +10,15 @@ export default function Footer() {
       <div className="fcol">
         <Link href="/">Work</Link>
         <Link href="/about">About</Link>
-        <Link href="/news">News</Link>
+        <Link href="/blog">Blog</Link>
         <Link href="/#contact">Contact</Link>
       </div>
       <div className="fspace" />
       <div className="fcol">
-        <a href="#">Instagram</a>
+        <a href="https://www.instagram.com/block3_studio/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a>
         <a href="#">LinkedIn</a>
-        <a href="#">X</a>
-        <a href="#">Newsletter</a>
       </div>
-      <div className="fnote">© 2026 Pentagram Design — recreation for study. Not affiliated with Pentagram.</div>
+      <div className="fnote">© 2026 Block 3. All rights reserved.</div>
     </footer>
   );
 }

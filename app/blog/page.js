@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { NEWS } from "@/app/data/projects";
 
-export const metadata = { title: "News — Pentagram" };
+export const metadata = { title: "Blog — Block 3" };
 
-export default function NewsPage() {
+export default function BlogPage() {
   return (
     <div className="page">
-      <div className="eyebrow">News</div>
+      <div className="eyebrow">Blog</div>
       <h1>Stories from the studio.</h1>
       <p className="lede">New work, thinking and talks.</p>
 

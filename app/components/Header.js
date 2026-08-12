@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const NAV = [
   { label: "Work", href: "/" },
   { label: "About", href: "/about" },
-  { label: "News", href: "/news" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -34,13 +34,7 @@ export default function Header() {
             {n.label}
           </Link>
         ))}
-        <button className="search" aria-label="Search" type="button">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
-            <circle cx="11" cy="11" r="7" />
-            <line x1="16.5" y1="16.5" x2="21" y2="21" />
-          </svg>
-        </button>
-        <Link className="archive" href="/">Archive</Link>
+        <Link className="archive" href="/">Playground</Link>
       </nav>
 
       <button className={`burger-btn ${open ? "x" : ""}`} aria-label="Menu" onClick={() => setOpen((o) => !o)}>
@@ -49,7 +43,7 @@ export default function Header() {
 
       {open && (
         <div className="m-menu">
-          {[...NAV, { label: "Archive", href: "/" }].map((n) => (
+          {[...NAV, { label: "Playground", href: "/" }].map((n) => (
             <Link key={n.label} href={n.href}>{n.label}</Link>
           ))}
         </div>
