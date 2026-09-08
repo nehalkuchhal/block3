@@ -45,6 +45,21 @@ export const PROJECTS = [
     p1: "Andaman Excursion didn’t have a discovery problem — they had a return problem. Travellers believed they had already seen it all. We built a coffee-table travel magazine that reframes the islands as an experience layered with things once overlooked, told through the eyes of a character revisiting a family trip.",
     p2: "Illustrations and hand-drawn sketches carry the narrative, making the journey feel personal and lived rather than picture-perfect. In the end, the magazine didn’t just showcase Andaman — it reframed it.",
     credits: [["Partner", "Ishaan Kohli"], ["Sector", "Travel & Hospitality"], ["Scope", "Creative Direction, Storytelling, Design, Illustrations"], ["Year", "2026"]] },
+  { id: "panchamrit", title: "Panchamrit", disc: "Brand Identity · Packaging", heroWord: "spirits",
+    tags: ["Identity", "Packaging"], art: "a10",
+    thumb: "/panchamrit/p10.jpg",
+    desc: "A premium Indian dry gin steeped in the myth of the Samudra Manthan — finest Indian botanicals, worthy of the gods.",
+    images: [
+      "/panchamrit/p01.jpg", "/panchamrit/p02.jpg", "/panchamrit/p03.jpg", "/panchamrit/p04.jpg",
+      "/panchamrit/p05.jpg", "/panchamrit/p06.jpg", "/panchamrit/p07.jpg", "/panchamrit/p08.jpg",
+      "/panchamrit/p09.jpg", "/panchamrit/p10.jpg", "/panchamrit/p11.jpg", "/panchamrit/p12.jpg",
+      "/panchamrit/p13.jpg", "/panchamrit/p14.jpg",
+    ],
+    figs: ["a10", "a5"],
+    lede: "Worthy of the gods.",
+    p1: "Panchamrit is an Indian dry gin inspired by the Samudra Manthan — the churning of the cosmic ocean. Being gods wasn’t enough; life had grown dull, and so began the search for something worthy of the gods. The identity draws on ancient stories and celestial mythology, pairing a custom Algerian-style display type with an illustrated serpent and the finest Indian botanicals.",
+    p2: "From the etched cork stamp and the matchbox to the wrapped label and the thank-you card, every touchpoint carries the balance and discovery born from opposing forces.",
+    credits: [["Partner", "Ishaan Kohli"], ["Sector", "Food & Drink"], ["Scope", "Identity, Packaging, Art Direction"], ["Year", "2026"]] },
 ];
 
 export const NEWS = [
