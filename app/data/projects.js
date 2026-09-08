@@ -30,7 +30,7 @@ export const PROJECTS = [
     credits: [["Partner", "Ishaan Kohli"], ["Sector", "Travel & Hospitality"], ["Scope", "Creative Direction, Storytelling, Design, Illustrations"], ["Year", "2026"]] },
   { id: "lightleaf", title: "Light Leaf", disc: "Brand Identity · Art Direction", heroWord: "brands",
     tags: ["Identity", "Packaging"], art: "a9",
-    thumb: "/lightleaf/2.jpg",
+    thumb: "/lightleaf/thumb.jpg",
     desc: "A radically classic identity for a high-end Indian farm brand — British elegance for handpicked, hydroponic mushrooms.",
     images: [
       "/lightleaf/1.jpg", "/lightleaf/2.jpg", "/lightleaf/3.jpg", "/lightleaf/4.jpg", "/lightleaf/5.jpg",
