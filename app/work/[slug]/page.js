@@ -15,8 +15,7 @@ export default function ProjectPage({ params }) {
   const p = getProject(params.slug);
   if (!p) notFound();
 
-  const i = PROJECTS.findIndex((x) => x.id === p.id);
-  const related = [1, 2, 3].map((k) => PROJECTS[(i + k) % PROJECTS.length]);
+  const related = PROJECTS.filter((x) => x.id !== p.id).slice(0, 3);
 
   return <ProjectDetail project={p} related={related} />;
 }
