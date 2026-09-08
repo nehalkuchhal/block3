@@ -6,13 +6,13 @@ import Art from "./Art";
 import Thumb from "./Thumb";
 
 const SECTOR = {
-  panchamrit: "Food & Drink", lightleaf: "Food & Drink", andaman: "Travel & Hospitality", toysun: "Fashion & Beauty", meridian: "Finance", verso: "Arts & Culture", solstice: "Arts & Culture",
+  beenest: "Arts & Culture", panchamrit: "Food & Drink", lightleaf: "Food & Drink", andaman: "Travel & Hospitality", toysun: "Fashion & Beauty", meridian: "Finance", verso: "Arts & Culture", solstice: "Arts & Culture",
   review: "Media", atlas: "Technology", kinfolk: "Food & Drink",
   northbound: "Transport", serif: "Arts & Culture", bloom: "Retail",
   harbor: "Industry", field: "Media", cassette: "Technology",
 };
 const OFFICE = {
-  panchamrit: "New Delhi", lightleaf: "New Delhi", andaman: "New Delhi", toysun: "New Delhi", meridian: "London", verso: "New York", solstice: "Berlin", review: "New York",
+  beenest: "New Delhi", panchamrit: "New Delhi", lightleaf: "New Delhi", andaman: "New Delhi", toysun: "New Delhi", meridian: "London", verso: "New York", solstice: "Berlin", review: "New York",
   atlas: "Austin", kinfolk: "London", northbound: "Berlin", serif: "London",
   bloom: "New York", harbor: "London", field: "Austin", cassette: "New York",
 };

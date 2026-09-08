@@ -60,6 +60,19 @@ export const PROJECTS = [
     p1: "Panchamrit is an Indian dry gin inspired by the Samudra Manthan — the churning of the cosmic ocean. Being gods wasn’t enough; life had grown dull, and so began the search for something worthy of the gods. The identity draws on ancient stories and celestial mythology, pairing a custom Algerian-style display type with an illustrated serpent and the finest Indian botanicals.",
     p2: "From the etched cork stamp and the matchbox to the wrapped label and the thank-you card, every touchpoint carries the balance and discovery born from opposing forces.",
     credits: [["Partner", "Ishaan Kohli"], ["Sector", "Food & Drink"], ["Scope", "Identity, Packaging, Art Direction"], ["Year", "2026"]] },
+  { id: "beenest", title: "Beenest", disc: "Editorial · Publishing", heroWord: "magazines",
+    tags: ["Editorial", "Typography"], art: "a2",
+    thumb: "/beenest/b01.jpg",
+    desc: "An arts & artists quarterly — long-form essays on India’s cities, crafts, food and heritage, in a considered editorial system.",
+    images: [
+      "/beenest/b01.jpg", "/beenest/b02.jpg", "/beenest/b03.jpg", "/beenest/b04.jpg", "/beenest/b05.jpg",
+      "/beenest/b06.jpg", "/beenest/b07.jpg", "/beenest/b08.jpg", "/beenest/b09.jpg", "/beenest/b10.jpg",
+    ],
+    figs: ["a2", "a5"],
+    lede: "Arts & artists, quarterly.",
+    p1: "Beenest is a quarterly magazine of arts and artists — long-form writing on India’s cities, crafts, food, architecture and heritage. Each issue pairs a disciplined grid and classic typography with expressive, subject-led spreads, from watercolour coastlines to bold display type.",
+    p2: "Across volumes and issues the system stays unmistakable, while every story is given room to find its own voice.",
+    credits: [["Partner", "Ishaan Kohli"], ["Sector", "Arts & Culture"], ["Scope", "Editorial Design, Art Direction, Typography"], ["Year", "2025"]] },
 ];
 
 export const NEWS = [
