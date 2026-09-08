@@ -6,13 +6,13 @@ import Art from "./Art";
 import Thumb from "./Thumb";
 
 const SECTOR = {
-  andaman: "Travel & Hospitality", toysun: "Fashion & Beauty", meridian: "Finance", verso: "Arts & Culture", solstice: "Arts & Culture",
+  lightleaf: "Food & Drink", andaman: "Travel & Hospitality", toysun: "Fashion & Beauty", meridian: "Finance", verso: "Arts & Culture", solstice: "Arts & Culture",
   review: "Media", atlas: "Technology", kinfolk: "Food & Drink",
   northbound: "Transport", serif: "Arts & Culture", bloom: "Retail",
   harbor: "Industry", field: "Media", cassette: "Technology",
 };
 const OFFICE = {
-  andaman: "New Delhi", toysun: "New Delhi", meridian: "London", verso: "New York", solstice: "Berlin", review: "New York",
+  lightleaf: "New Delhi", andaman: "New Delhi", toysun: "New Delhi", meridian: "London", verso: "New York", solstice: "Berlin", review: "New York",
   atlas: "Austin", kinfolk: "London", northbound: "Berlin", serif: "London",
   bloom: "New York", harbor: "London", field: "Austin", cassette: "New York",
 };
@@ -85,10 +85,14 @@ export default function ProjectDetail({ project, related }) {
       <div className={`case-layout ${open ? "open" : ""}`}>
         {project.images?.length ? (
           <div className="case-media raw">
-            {project.images.map((src, i) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img key={src} src={src} alt={`${project.title} — ${i + 1}`} loading={i < 1 ? "eager" : "lazy"} />
-            ))}
+            {project.images.map((src, i) =>
+              src.endsWith(".mp4") ? (
+                <video key={src} src={src} autoPlay muted loop playsInline preload="metadata" />
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img key={src} src={src} alt={`${project.title} — ${i + 1}`} loading={i < 1 ? "eager" : "lazy"} />
+              )
+            )}
           </div>
         ) : (
           <div className="case-media">{blocks.map(renderBlock)}</div>
