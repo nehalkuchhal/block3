@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PROJECTS } from "@/app/data/projects";
 import Thumb from "./Thumb";
 
-const RAIL = ["toysun", "andaman", "solstice", "bloom", "atlas"];
+const RAIL = ["toysun", "lightleaf", "andaman", "solstice", "bloom", "atlas"];
 
 export default function FeatureSection() {
   const items = RAIL.map((id) => PROJECTS.find((p) => p.id === id)).filter(Boolean);
