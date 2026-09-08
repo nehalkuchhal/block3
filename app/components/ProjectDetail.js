@@ -93,6 +93,9 @@ export default function ProjectDetail({ project, related }) {
                 <img key={src} src={src} alt={`${project.title} — ${i + 1}`} loading={i < 1 ? "eager" : "lazy"} />
               )
             )}
+            {project.endHtml && (
+              <div className="credit-slide" dangerouslySetInnerHTML={{ __html: project.endHtml }} />
+            )}
           </div>
         ) : (
           <div className="case-media">{blocks.map(renderBlock)}</div>
